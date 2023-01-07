@@ -13,7 +13,7 @@ import type { GitHubRepos, Project, ProjectPost } from '~/types';
  * @TODO Switch to v3 API using GraphQL to save over-fetching
  */
 export async function fetchProjects(): Promise<Array<Project> | null> {
-	const response = await fetch('https://api.github.com/users/nurodev/repos', {
+	const response = await fetch(process.env.GITHUB_API, {
 		headers: {
 			...(process.env.GITHUB_PAT && {
 				authorization: `token ${process.env.GITHUB_PAT}`,

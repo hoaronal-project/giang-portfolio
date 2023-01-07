@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps<ReferralsProps> = async () => {
 
 export default function ReferralsPage({ referrals }: ReferralsProps): JSX.Element {
 	const { theme } = useTheme();
-	const prefersDarkColorScheme = useMedia('(prefers-color-scheme: dark)', false);
+	const prefersDarkColorScheme = useMedia('(prefers-color-scheme: dark)', true);
 
 	const isDark = useMemo(() => {
 		switch (theme) {
