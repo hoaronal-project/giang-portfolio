@@ -67,11 +67,9 @@ export default function BlogPost({ post }: BlogPostProps): JSX.Element {
 						{post.frontmatter.banner && (post.frontmatter.banner_show ?? true) && (
 							<div className="relative sm:max-w-2xl lg:sm:max-w-6xl mx-auto my-2 sm:my-4">
 								<div className="w-full h-full h-64 lg:h-96 mb-8 bg-gray-200 dark:bg-gray-600 rounded-3xl motion-safe:animate-pulse" />
-								<Image
+								<img
 									alt={post.frontmatter.banner_alt ?? post.frontmatter.title}
 									className="absolute top-0 left-0 w-full h-auto max-h-64 lg:max-h-96 mb-8 rounded-3xl object-cover select-none shadow-xl default-transition"
-									draggable={false}
-									layout="fill"
 									src={post.frontmatter.banner}
 								/>
 							</div>
@@ -105,6 +103,9 @@ export default function BlogPost({ post }: BlogPostProps): JSX.Element {
 						</article>
 					</div>
 				</div>
+				<iframe width="800" height="450"
+						src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fmmq3pTIpSlqUvanYoHRXjT%2F%255BPrototype%255D%255BDesign%255D-Arbre-Marketplace%3Fnode-id%3D1%253A2%26t%3D6pPu5rirWh1FLoc5-1"
+						allowFullScreen></iframe>
 			</Layout.Blog>
 			<Blog.Styles.Code />
 			<Blog.Styles.Elements />

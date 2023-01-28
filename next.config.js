@@ -19,21 +19,7 @@ const ContentSecurityPolicy = `
 const config = {
 	images: {
 		domains: [
-			// Discord assets
-			'cdn.discordapp.com',
-
-			// GitHub assets
-			'raw.githubusercontent.com',
-
-			// Spotify Album Art
-			'i.scdn.co',
-
-			// Streamable thumbnails
-			'cdn-cf-east.streamable.com',
-
-			// Unsplash
-			'source.unsplash.com',
-			'images.unsplash.com',
+			'*',
 		],
 	},
 	// Inspired by: https://github.com/leerob/leerob.io/blob/main/next.config.js#L44-L81
